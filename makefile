@@ -5,8 +5,8 @@ exe := bin.binignore/Survivio
 
 all:
 	clear
-	$(compiler) src/main.cpp -o bin.binignore/main -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0
-	bin.binignore/main
+	$(compiler) src/main.cpp -o bin.binignore/main -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0 -lsfml-graphics -lsfml-window -lsfml-system
+	./bin.binignore/main
 	
 local-build:
 	$(local-compiler) src/main.cpp -o $(exe) -v -std=c++17 -Ofast
