@@ -4,7 +4,7 @@ exe := bin.binignore/Survivio
 lib := -l sfml-graphics -l sfml-window -l sfml-system
 libPath := -L bin.binignore/lib/
 includePath := -I dependencies/SFML/linux/include/
-#bin.binignore folder should be created before build
+#bin.binignore folder should be created before debug build and deleted before release build
 
 all:
 	rm -rf bin.binignore/*
@@ -13,7 +13,7 @@ all:
 	./bin.binignore/main
 
 build:
-	rm -rf bin.binignore/*
+	mkdir bin.binignore
 	cp -r dependencies/SFML/linux/lib/ bin.binignore/
 	$(compiler) src/main.cpp -o $(exe) -v -std=c++17 -Ofast $(includePath) $(libPath) $(lib)
 	#use -Oz for size

@@ -5,6 +5,7 @@ Survivio is a desktop clone of the popular browser battle royale shooter - survi
 The project is currently in the stage of early alpha development, so any contribution is welcome.
 
 
+
 # Building
 
 1) On Debian and Debian-based linux distributions
@@ -28,9 +29,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
         git clone https://github.com/Fenex330/Survivio.git
 
-3) Manually create folder named "bin.binignore" inside.
-
-4) In the terminal write:
+3) In the terminal write:
 
         make build
 
