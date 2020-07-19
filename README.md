@@ -22,4 +22,5 @@ make sure these dependencies (used by SFML library) are satisfied:
     clang (or gcc)
 
 In the terminal write:
-    make build
+
+make build
