@@ -20,7 +20,7 @@ The project is currently in the stage of early alpha development, so any contrib
         libflac-dev
         libvorbis-dev
         make
-        clang (or gcc)
+        clang
 
 
     (on Mac OS and Windows first step is omitted)
@@ -34,4 +34,4 @@ The project is currently in the stage of early alpha development, so any contrib
         make build
 
 
-The folder bin.binignore will contain all the binary files
+The folder bin.ignore will contain all the binary files
