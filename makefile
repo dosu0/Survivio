@@ -12,7 +12,7 @@ all:
 	cp start.sh bin.binignore/
 	chmod +x bin.binignore/start.sh
 	$(compiler) src/main.cpp -o $(exe) -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0 $(includePath) $(libPath) $(lib)
-	./bin.binignore/start.sh
+	cd bin.binignore && ./start.sh
 
 build:
 	mkdir bin.binignore
