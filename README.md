@@ -1,6 +1,6 @@
 # About
 
-Survivio is a desktop clone of the popular browser battle royale shooter - surviv.io
+Survivio is a desktop clone of the popular browser battle royale shooter - surviv.io, written in C++
 
 The project is currently in the stage of early alpha development, so any contribution is welcome.
 
