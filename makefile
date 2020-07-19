@@ -9,12 +9,16 @@ includePath := -I dependencies/SFML/linux/include/
 all:
 	rm -rf bin.binignore/*
 	cp -r dependencies/SFML/linux/lib/ bin.binignore/
+	cp start.sh bin.binignore/
+	chmod +x bin.binignore/start.sh
 	$(compiler) src/main.cpp -o bin.binignore/main -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0 $(includePath) $(libPath) $(lib)
-	./bin.binignore/main
+	./bin.binignore/start.sh
 
 build:
 	mkdir bin.binignore
 	cp -r dependencies/SFML/linux/lib/ bin.binignore/
+	cp start.sh bin.binignore/
+	chmod +x bin.binignore/start.sh
 	$(compiler) src/main.cpp -o $(exe) -v -std=c++17 -Ofast $(includePath) $(libPath) $(lib)
 	#use -Oz for size
 	#change $(compiler) to $(local-compiler) for more recent version
