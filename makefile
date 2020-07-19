@@ -11,7 +11,7 @@ all:
 	cp -r dependencies/SFML/linux/lib/ bin.binignore/
 	cp start.sh bin.binignore/
 	chmod +x bin.binignore/start.sh
-	$(compiler) src/main.cpp -o bin.binignore/main -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0 $(includePath) $(libPath) $(lib)
+	$(compiler) src/main.cpp -o $(exe) -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0 $(includePath) $(libPath) $(lib)
 	./bin.binignore/start.sh
 
 build:
