@@ -26,13 +26,13 @@ The project is currently in the stage of early alpha development, so any contrib
 
 2) clone this repository anywhere:
 
-    git clone https://github.com/Fenex330/Survivio.git
+        git clone https://github.com/Fenex330/Survivio.git
 
 3) Manually create folder named "bin.binignore" inside.
 
 4) In the terminal write:
 
-    make build
+        make build
 
 
 The folder bin.binignore will contain all the binary files
