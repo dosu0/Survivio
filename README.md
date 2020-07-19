@@ -7,7 +7,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
 # Building
 
-On debian and debian-based linux distributions
+On Debian and Debian-based linux distributions
 make sure these dependencies (used by SFML library) are satisfied:
 
 
@@ -21,6 +21,12 @@ make sure these dependencies (used by SFML library) are satisfied:
     make
     clang (or gcc)
 
+On Mac OS and Windows first step is omitted
+
+
 In the terminal write:
 
-make build
+    make build
+
+
+The folder bin.binignore will contain all the binary files
