@@ -6,12 +6,12 @@ exe := bin/Survivio
 all:
 	clear
 	cd ..
-	$(compiler) Survivio/main.cpp -o bin/main -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0
+	$(compiler) Survivio/src/main.cpp -o bin/main -Wall -Wextra -Weffc++ -Wpedantic -pedantic -pedantic-errors -std=c++17 -g -O0
 	./main
 	
 local-build:
 	cd ..
-	$(local-compiler) Survivio/main.cpp -o $(exe) -v -std=c++17 -Ofast
+	$(local-compiler) Survivio/src/main.cpp -o $(exe) -v -std=c++17 -Ofast
 	#use -Oz for size
 
 build:
