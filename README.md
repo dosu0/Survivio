@@ -1,14 +1,14 @@
-# Survivio
+# About
 
-A desktop clone of the popular browser battle royale shooter - surviv.io
+Survivio is a desktop clone of the popular browser battle royale shooter - surviv.io
 
 The project is currently in the stage of early alpha development, so any contribution is welcome.
 
 
 # Building
 
-On debian and debian-based distributions
-make sure these dependencies are satisfied:
+On debian and debian-based linux distributions
+make sure these dependencies (used by SFML library) are satisfied:
 
 
     libx11-dev
@@ -18,3 +18,8 @@ make sure these dependencies are satisfied:
     libopenal-dev
     libflac-dev
     libvorbis-dev
+    make
+    clang (or gcc)
+
+In the terminal write:
+    make build
