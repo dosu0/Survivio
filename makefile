@@ -4,7 +4,6 @@ exe := bin.ignore/Survivio
 lib := -l sfml-graphics -l sfml-window -l sfml-system
 libPath := -L bin.ignore/lib/
 #includePath := -I dependencies/SFML/linux/include/
-#bin.binignore folder should be created before debug build and deleted before release build
 
 all:
 	rm -rf bin.ignore/*
