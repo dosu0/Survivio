@@ -1,5 +1,11 @@
 #pragma once
 
+/* place all SFML includes here */
+
+
+//switch to NDEBUG in release
+#define DEBUG
+
 #ifdef __LINUX__
     #include "../dependencies/SFML/linux/include/SFML/Graphics.hpp"
 #endif
