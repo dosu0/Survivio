@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp>
+#include "OS-spesific.hpp"
 
 int main()
 {
