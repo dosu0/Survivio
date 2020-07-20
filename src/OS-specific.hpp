@@ -6,14 +6,14 @@
 //switch to NDEBUG in release
 #define DEBUG
 
-#ifdef __LINUX__
+#ifdef __linux__
     #include "../dependencies/SFML/linux/include/SFML/Graphics.hpp"
 #endif
 
-#ifdef __WINDOWS__
+#ifdef _WIN32
     #include "../dependencies/SFML/windows/include/SFML/Graphics.hpp"
 #endif
 
-#ifdef __MACOS__
+#ifdef __APPLE__
     #include "../dependencies/SFML/macOS/include/SFML/Graphics.hpp"
 #endif
