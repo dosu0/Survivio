@@ -1,13 +1,13 @@
 #pragma once
 
-#ifdef LINUX
+#ifdef __LINUX__
     #include "../dependencies/SFML/linux/include/SFML/Graphics.hpp"
 #endif
 
-#ifdef WINDOWS
+#ifdef __WINDOWS__
     #include "../dependencies/SFML/windows/include/SFML/Graphics.hpp"
 #endif
 
-#ifdef MACOS
+#ifdef __MACOS__
     #include "../dependencies/SFML/macOS/include/SFML/Graphics.hpp"
 #endif
