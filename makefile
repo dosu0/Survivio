@@ -22,4 +22,3 @@ build:
 	$(compiler) src/main.cpp -o $(exe) -v -std=c++17 -Ofast $(includePath) $(libPath) $(lib)
 	#use -Oz for size
 	#change $(compiler) to $(local-compiler) for more recent version
-	#test ignore
