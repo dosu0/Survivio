@@ -35,3 +35,10 @@ The project is currently in the stage of early alpha development, so any contrib
 
 
 The folder bin.ignore will contain all the binary files
+
+
+
+## Mirror List
+
+https://github.com/Fenex330/Survivio
+https://notabug.org/Fenex33/Survivio
