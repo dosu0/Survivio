@@ -6,7 +6,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
 
 
-# Building
+## Building
 
 1) On Debian and Debian-based linux distributions
     make sure these dependencies (used by SFML library) are satisfied:
