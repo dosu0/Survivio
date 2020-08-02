@@ -40,5 +40,6 @@ The folder bin.ignore will contain all the binary files
 
 ## Mirror List
 
-https://github.com/Fenex330/Survivio
-https://notabug.org/Fenex33/Survivio
+Primary https://github.com/Fenex330/Survivio
+
+Secondary https://notabug.org/Fenex33/Survivio
