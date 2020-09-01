@@ -3,6 +3,7 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "Main Menu");
+    window.setVerticalSyncEnabled(true);
 
     while (window.isOpen())
     {
