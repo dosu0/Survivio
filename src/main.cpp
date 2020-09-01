@@ -3,15 +3,24 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "Main Menu");
+    
     window.setVerticalSyncEnabled(true);
+    window.setKeyRepeatEnabled(false)
 
-    while (window.isOpen())
+    while (window.isOpen())  //game loop
     {
         sf::Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed)
-                window.close();
+            switch (event.type)
+            {
+                case sf::Event::Closed:
+                    window.close();
+                    break;
+
+                default:
+                    break;
+            }
         }
 
         window.clear();
