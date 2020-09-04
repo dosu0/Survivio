@@ -17,7 +17,7 @@ build:
 	mkdir bin.ignore
 	cp -r dependencies/SFML/linux/lib/ bin.ignore/
 	cp -r res/ bin.ignore/
-	cp start.sh bin.ignore/
+	cp start.sh CHANGELOG LICENSE bin.ignore/
 	chmod +x bin.ignore/start.sh
 	$(compiler) src/*.cpp -o $(exe) -v -std=c++17 -Ofast $(includePath) $(libPath) $(lib)
 	#use -Oz for size
