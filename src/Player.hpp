@@ -3,5 +3,5 @@
 class Player
 {
     public:
-        Player();
+        Player() = default;
 };

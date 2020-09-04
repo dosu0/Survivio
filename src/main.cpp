@@ -3,19 +3,19 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "Main Menu");
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Main Menu");
     
     window.setVerticalSyncEnabled(true);
     window.setKeyRepeatEnabled(false);
 
     //////////////////////////// test case
-    sf::Texture texture;
-    texture.loadFromFile("res/sprites/character.png");
-    texture.setSmooth(true);
-    texture.setRepeated(false);
+    sf::Texture player_texture;
+    player_texture.loadFromFile("res/sprites/character.png");
+    player_texture.setSmooth(true);
+    player_texture.setRepeated(false);
 
-    sf::Sprite sprite;
-    sprite.setTexture(texture);
+    sf::Sprite player_sprite;
+    player_sprite.setTexture(texture);
     ////////////////////////////
 
     while (window.isOpen())  //game loop
@@ -38,8 +38,10 @@ int main()
         }
 
         window.clear();
+
         //draw stuff here
-        window.draw(sprite);
+        window.draw(player_sprite);
+        
         window.display();
     }
 
