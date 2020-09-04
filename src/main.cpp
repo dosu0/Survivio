@@ -8,6 +8,16 @@ int main()
     window.setVerticalSyncEnabled(true);
     window.setKeyRepeatEnabled(false);
 
+    //////////////////////////// test case
+    sf::Texture texture;
+    texture.loadFromFile("res/sprites/character.png")
+    texture.setSmooth(true);
+    texture.setRepeated(false);
+
+    sf::Sprite sprite;
+    sprite.setTexture(texture);
+    ////////////////////////////
+
     while (window.isOpen())  //game loop
     {
         sf::Event event;
@@ -28,6 +38,8 @@ int main()
         }
 
         window.clear();
+        //draw stuff here
+        window.draw(sprite);
         window.display();
     }
 
