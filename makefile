@@ -1,5 +1,4 @@
 compiler := clang++
-local-compiler := ~/Programming/clang+llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang++
 exe := bin.ignore/Survivio
 lib := -l sfml-graphics -l sfml-window -l sfml-system
 libPath := -L bin.ignore/lib/
@@ -22,4 +21,3 @@ build:
 	chmod +x bin.ignore/start.sh
 	$(compiler) src/*.cpp -o $(exe) -v -std=c++17 -Ofast $(includePath) $(libPath) $(lib)
 	#use -Oz for size
-	#change $(compiler) to $(local-compiler) for more recent version
