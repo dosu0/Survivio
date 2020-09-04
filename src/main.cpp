@@ -10,7 +10,7 @@ int main()
 
     //////////////////////////// test case
     sf::Texture texture;
-    texture.loadFromFile("res/sprites/character.png")
+    texture.loadFromFile("res/sprites/character.png");
     texture.setSmooth(true);
     texture.setRepeated(false);
 
