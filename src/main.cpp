@@ -7,6 +7,7 @@ int main()
     
     window.setVerticalSyncEnabled(true);
     window.setKeyRepeatEnabled(false);
+    Player player;
 
     while (window.isOpen())  //game loop
     {
@@ -30,7 +31,7 @@ int main()
         window.clear();
 
         //draw stuff here
-        window.draw(player_sprite);
+        window.draw(player.sprite);
         
         window.display();
     }
