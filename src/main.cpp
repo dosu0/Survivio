@@ -5,7 +5,7 @@ int main()
     sf::RenderWindow window(sf::VideoMode(200, 200), "Main Menu");
     
     window.setVerticalSyncEnabled(true);
-    window.setKeyRepeatEnabled(false)
+    window.setKeyRepeatEnabled(false);
 
     while (window.isOpen())  //game loop
     {
@@ -16,6 +16,9 @@ int main()
             {
                 case sf::Event::Closed:
                     window.close();
+                    break;
+
+                case sf::Event::KeyPressed:
                     break;
 
                 default:
