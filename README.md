@@ -34,7 +34,7 @@ The project is currently in the stage of early alpha development, so any contrib
         make build
 
 
-The folder bin.ignore will contain all the binary files
+The folder "build" will contain all the binary files
 
 
 
