@@ -16,6 +16,7 @@ if (APPLE)
 endif ()
 
 if (UNIX AND NOT APPLE) #LINUX
+    set (CMAKE_CXX_FLAGS "-Wall -Wextra -Weffc++")
     set (SFML_INCLUDE_DIR "dependencies/SFML/linux/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/linux/lib")
 endif ()
