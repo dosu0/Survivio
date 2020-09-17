@@ -36,4 +36,4 @@ add_executable (Survivio src/main.cpp src/Player.cpp)
 
 target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
 
-install (TARGETS Survivio DESTINATION build)
+install (TARGETS Survivio DESTINATION bin)
