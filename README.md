@@ -33,8 +33,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
         mkdir Survivio/build/
         cd Survivio/build/
-        cmake ..
-        make
+        cmake .. && make
 
 
 The folder "bin" inside "build" will contain all the binary files
