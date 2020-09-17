@@ -31,9 +31,9 @@ The project is currently in the stage of early alpha development, so any contrib
 
 3) In the terminal write:
 
-        mkdir Survivio/build/
+        mkdir -p Survivio/build/
         cd Survivio/build/
-        cmake .. && make
+        cmake .. && cmake --build .
 
 
 The folder "bin" inside "build" will contain all the binary files
