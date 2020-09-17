@@ -8,14 +8,16 @@ include_directories(include)
 
 if (WIN32)
     include_directories(/dependencies/SFML/windows/include/SFML)
-endif (WIN32)
-
-if (LINUX)
-    include_directories(/dependencies/SFML/linux/include/SFML)
-endif (LINUX)
+endif ()
 
 if (APPLE)
     include_directories(/dependencies/SFML/macOS/include/SFML)
-endif (APPLE)
+endif ()
+
+if (LINUX) #UNIX AND NOT APPLE
+    include_directories(/dependencies/SFML/linux/include/SFML)
+endif ()
 
 add_executable(Survivio main.cpp Player.cpp)
+
+install(TARGETS Survivio DESTINATION build)
