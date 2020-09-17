@@ -1,5 +1,5 @@
-#include "OS-specific.hpp"
-#include "Player.hpp"
+#include <OS-specific.hpp>
+#include <Player.hpp>
 
 Player::Player()
 {
