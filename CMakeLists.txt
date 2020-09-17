@@ -34,6 +34,6 @@ endif()
 
 add_executable (Survivio main.cpp Player.cpp)
 
-target_link_libraries (SFMLApp sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
+target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
 
 install (TARGETS Survivio DESTINATION build)
