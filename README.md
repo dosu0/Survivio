@@ -31,7 +31,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
 3) In the terminal write:
 
-        mkdir -p Survivio/build/
+        mkdir Survivio/build/
         cd Survivio/build/
         cmake .. && cmake --build .
 
