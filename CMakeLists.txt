@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.17.5)
 project (Survivio)
 
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
 set (CMAKE_BUILD_PARALLEL_LEVEL 8)
+set (MULTITHREADED_BUILD 8)
 
 if (WIN32)
     set (SFML_INCLUDE_DIR "dependencies/SFML/windows/include")
