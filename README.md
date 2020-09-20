@@ -33,7 +33,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
         mkdir Survivio/build/
         cd Survivio/build/
-        cmake .. -DCMAKE_BUILD_TYPE=Release && cmake --build .
+        cmake .. && cmake --build .
 
 
 The folder "bin" inside "build" will contain all the binary files

@@ -1,4 +1,5 @@
 #add --verbose flag for detailed status log
+#add -DCMAKE_BUILD_TYPE=Debug for development builds
 #change CMAKE_BUILD_PARALLEL_LEVEL and MULTITHREADED_BUILD to match the number of your cores/threads
 
 
@@ -11,6 +12,11 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
 set (CMAKE_BUILD_PARALLEL_LEVEL 8)
 set (MULTITHREADED_BUILD 8)
+
+if (NOT CMAKE_BUILD_TYPE)
+  set (CMAKE_BUILD_TYPE "Release")
+  message( STATUS "Build type not specified: Use Release by default")
+endif ()
 
 if (WIN32)
     set (SFML_INCLUDE_DIR "dependencies/SFML/windows/include")
