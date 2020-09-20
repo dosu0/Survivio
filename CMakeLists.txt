@@ -15,7 +15,7 @@ set (MULTITHREADED_BUILD 8)
 
 if (NOT CMAKE_BUILD_TYPE)
   set (CMAKE_BUILD_TYPE "Release")
-  message( STATUS "Build type not specified: Use Release by default")
+  message (STATUS "Build type not specified: Use Release by default")
 endif ()
 
 if (WIN32)
