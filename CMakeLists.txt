@@ -4,7 +4,7 @@
 
 
 
-cmake_minimum_required(VERSION 3.18.2)
+cmake_minimum_required (VERSION 3.18.2)
 project (Survivio)
 
 set (CMAKE_CXX_STANDARD 17)
@@ -40,4 +40,4 @@ link_directories (SFML_LIBRARY_DIR)
 
 add_executable (Survivio src/main.cpp src/Player.cpp)
 target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
-install (TARGETS Survivio DESTINATION bin)
+#install (TARGETS Survivio DESTINATION bin)
