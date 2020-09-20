@@ -38,6 +38,7 @@ include_directories (include)
 include_directories (SFML_INCLUDE_DIR)
 link_directories (SFML_LIBRARY_DIR)
 
-add_executable (Survivio src/main.cpp src/Player.cpp)
+file (GLOB SRC_FILES "src/*.cpp")
+add_executable (Survivio ${SRC_FILES})
 target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
 #install (TARGETS Survivio DESTINATION bin)
