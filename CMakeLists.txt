@@ -18,6 +18,8 @@ if (NOT CMAKE_BUILD_TYPE)
   message (STATUS "Build type not specified: Use Release by default")
 endif ()
 
+file(MAKE_DIRECTORY "build/bin")
+
 if (WIN32)
     set (SFML_INCLUDE_DIR "dependencies/SFML/windows/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/windows/bin")
@@ -39,7 +41,6 @@ include_directories (SFML_INCLUDE_DIR)
 link_directories (SFML_LIBRARY_DIR)
 file (GLOB SRC_FILES "src/*.cpp")
 
-file(MAKE_DIRECTORY "build/bin")
 add_executable (Survivio ${SRC_FILES})
 target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
 #install (TARGETS Survivio DESTINATION "build/bin")
