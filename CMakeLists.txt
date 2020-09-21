@@ -48,6 +48,6 @@ file (GLOB SRC_FILES "src/*.cpp")
 file (GLOB LIB_FILES "${CMAKE_CURRENT_BINARY_DIR}/bin/lib/*")
 
 add_executable (Survivio ${SRC_FILES})
-set_target_properties (Survivio PROPERTIES LINK_FLAGS "-Wl,-rpath,./bin/lib")
+set_target_properties (Survivio PROPERTIES LINK_FLAGS "-Wl,-rpath,./lib")
 target_link_libraries (Survivio ${LIB_FILES}) #sfml-graphics sfml-window sfml-audio sfml-network sfml-system
 #install (TARGETS Survivio DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
