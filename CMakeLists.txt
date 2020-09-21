@@ -21,6 +21,7 @@ endif()
 file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
 if (WIN32)
     set (SFML_INCLUDE_DIR "dependencies/SFML/windows/include")
