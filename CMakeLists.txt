@@ -18,11 +18,6 @@ if (NOT CMAKE_BUILD_TYPE)
   message (STATUS "Build type not specified: Use Release by default")
 endif()
 
-file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin")
-file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
-file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
-file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
-
 if (WIN32)
     set (SFML_INCLUDE_DIR "dependencies/SFML/windows/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/windows/bin")
@@ -38,6 +33,11 @@ if (UNIX AND NOT APPLE) #LINUX
     set (SFML_INCLUDE_DIR "dependencies/SFML/linux/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/linux/lib")
 endif()
+
+file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin")
+file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
 include_directories (include)
 include_directories (SFML_INCLUDE_DIR)
