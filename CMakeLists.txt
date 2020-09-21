@@ -39,8 +39,8 @@ file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
-include_directories (include)
-include_directories (SFML_INCLUDE_DIR)
+include_directories (SYSTEM include)
+include_directories (SYSTEM ${SFML_INCLUDE_DIR})
 link_directories (SFML_LIBRARY_DIR)
 file (GLOB SRC_FILES "src/*.cpp")
 
