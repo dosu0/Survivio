@@ -1,5 +1,5 @@
 #add --verbose flag for detailed status log
-#add -DCMAKE_BUILD_TYPE=Debug for development builds
+#add -DCMAKE_BUILD_TYPE="Debug" for development builds
 #change CMAKE_BUILD_PARALLEL_LEVEL and MULTITHREADED_BUILD to match the number of your cores/threads
 
 
@@ -39,7 +39,7 @@ file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
-include_directories (SYSTEM include)
+include_directories ("include")
 include_directories (SYSTEM ${SFML_INCLUDE_DIR})
 link_directories (SFML_LIBRARY_DIR)
 file (GLOB SRC_FILES "src/*.cpp")
