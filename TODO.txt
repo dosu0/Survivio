@@ -1,6 +1,4 @@
 Add Multiplayer support
-make start.sh automatically executable
-make executable run without startup script on linux
 test on windows and mac
 if compiling cross-platform successfully - tag master branch
 copy main executable to bin/
