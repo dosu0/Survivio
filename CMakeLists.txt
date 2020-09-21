@@ -29,6 +29,7 @@ if (APPLE)
 endif()
 
 if (UNIX AND NOT APPLE) #LINUX
+    file (COPY "start.sh" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
     set (CMAKE_CXX_FLAGS_DEBUG "-Wall -Wextra -Weffc++")
     set (SFML_INCLUDE_DIR "dependencies/SFML/linux/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/linux/lib")
@@ -38,12 +39,14 @@ file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+file (COPY "${SFML_LIBRARY_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
 include_directories ("include")
 include_directories (SYSTEM ${SFML_INCLUDE_DIR})
-link_directories (SFML_LIBRARY_DIR)
+#link_directories (SFML_LIBRARY_DIR)
 file (GLOB SRC_FILES "src/*.cpp")
+file (GLOB LIB_FILES "${CMAKE_CURRENT_BINARY_DIR}/bin/lib/*")
 
 add_executable (Survivio ${SRC_FILES})
-target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
+target_link_libraries (Survivio ${LIB_FILES}) #sfml-graphics sfml-window sfml-audio sfml-network sfml-system
 #install (TARGETS Survivio DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
