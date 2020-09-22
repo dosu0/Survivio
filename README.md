@@ -1,6 +1,6 @@
 # About
 
-Survivio is a desktop clone of the popular browser battle royale shooter - surviv.io, written in C++
+Survivio is a desktop clone of the popular browser battle royale shooter - Surviv.io, written in C++
 
 The project is currently in the stage of early alpha development, so any contribution is welcome.
 
@@ -13,11 +13,13 @@ The project is currently in the stage of early alpha development, so any contrib
 
 2) Install [Cmake](https://cmake.org/download/) (if you havent already)
 
-3) clone this repository anywhere:
+3) In the terminal write (to clone the repository on your computer):
 
         git clone https://github.com/Fenex330/Survivio.git
+        
+4) Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer)
 
-4) In the terminal write (or use cmake gui to configure and generate native build files):
+5) Then write (or use cmake gui to configure and generate native build files):
 
         mkdir Survivio/build/
         cd Survivio/build/
