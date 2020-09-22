@@ -7,6 +7,10 @@
 
 cmake_minimum_required (VERSION 3.18.2)
 
+if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
+    message(FATAL_ERROR "FATAL: In-source builds are not allowed. You should create a separate directory for build files.")
+endif()
+
 #set (CMAKE_C_COMPILER "clang") #or gcc
 #set (CMAKE_CXX_COMPILER "clang++") #or g++
 
@@ -18,10 +22,6 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 set (CMAKE_BUILD_PARALLEL_LEVEL 8)
 set (MULTITHREADED_BUILD 8)
 set (EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
-
-if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
-    message(FATAL_ERROR "FATAL: In-source builds are not allowed. You should create a separate directory for build files.")
-endif()
 
 if (NOT CMAKE_BUILD_TYPE)
   set (CMAKE_BUILD_TYPE "Release")
