@@ -8,7 +8,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
 ### Building
 
-1) Satisfy the SFML dependencies (https://www.sfml-dev.org/faq.php)
+1) Satisfy the SFML dependencies, if needed (https://www.sfml-dev.org/faq.php)
 
 2) clone this repository anywhere:
 
