@@ -19,6 +19,10 @@ set (CMAKE_BUILD_PARALLEL_LEVEL 8)
 set (MULTITHREADED_BUILD 8)
 set (EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
+if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
+    message(FATAL_ERROR "FATAL: In-source builds are not allowed. You should create a separate directory for build files.")
+endif()
+
 if (NOT CMAKE_BUILD_TYPE)
   set (CMAKE_BUILD_TYPE "Release")
   message (STATUS "Build type not specified: Use Release by default")
@@ -35,7 +39,7 @@ if (APPLE)
 endif()
 
 if (UNIX AND NOT APPLE) #LINUX
-    set (CMAKE_CXX_FLAGS_DEBUG "-Wall -Wextra -Weffc++")
+    set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -Wextra -Weffc++")
     set (SFML_INCLUDE_DIR "dependencies/SFML/linux/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/linux/lib")
 endif()
