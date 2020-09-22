@@ -9,7 +9,6 @@ cmake_minimum_required (VERSION 3.18.2)
 
 #set (CMAKE_C_COMPILER "clang") #or gcc
 #set (CMAKE_CXX_COMPILER "clang++") #or g++
-#set (CMAKE_MAKE_PROGRAM "ninja") #or make
 
 project (Survivio)
 
