@@ -11,11 +11,13 @@ The project is currently in the stage of early alpha development, so any contrib
 1) Satisfy the SFML dependencies, if needed (https://www.sfml-dev.org/faq.php)
    and intall the newest version of cmake (https://cmake.org/download/)
 
-2) clone this repository anywhere:
+2) Install [Cmake](https://cmake.org/download/) (if you havent already)
+
+3) clone this repository anywhere:
 
         git clone https://github.com/Fenex330/Survivio.git
 
-3) In the terminal write (or use cmake gui to configure and generate native build files):
+4) In the terminal write (or use cmake gui to configure and generate native build files):
 
         mkdir Survivio/build/
         cd Survivio/build/
