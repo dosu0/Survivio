@@ -18,10 +18,11 @@ The project is currently in the stage of early alpha development, so any contrib
         git clone https://github.com/Fenex330/Survivio.git
         
 4) Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer)
+        
+        mkdir Survivio/build/
 
 5) Then write (or use cmake gui to configure and generate native build files):
 
-        mkdir Survivio/build/
         cd Survivio/build/
         cmake .. && cmake --build .
 
