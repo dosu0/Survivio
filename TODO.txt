@@ -5,3 +5,5 @@ copy main executable to bin/
 specify custom compiler
 rename windows "bin" to "lib"
 package binaries with cpack
+try static linking (from custom sfml build)
+on windows try: codeblocks, codelite, mingw, VS, ninja, makefiles
