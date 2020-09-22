@@ -8,22 +8,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
 ### Building
 
-1) On Debian and Debian-based linux distributions
-    make sure these dependencies (used by SFML library) are satisfied:
-
-
-        libx11-dev
-        libgl1-mesa-dev
-        libudev-dev
-        libfreetype6-dev
-        libopenal-dev
-        libflac-dev
-        libvorbis-dev
-        make
-        clang
-
-
-    (on Mac OS and Windows first step is omitted)
+1) Satisfy the SFML dependencies (https://www.sfml-dev.org/faq.php)
 
 2) clone this repository anywhere:
 
@@ -36,7 +21,7 @@ The project is currently in the stage of early alpha development, so any contrib
         cmake .. && cmake --build .
 
 
-The folder "bin" inside "build" will contain all the binary files
+The folder "Survivio/build/bin" will contain all the binary files
 
 
 
