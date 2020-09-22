@@ -1,5 +1,6 @@
 #add --verbose flag for detailed status log
 #add -DCMAKE_BUILD_TYPE="Debug" for development builds
+#add -G"Ninja" for ninja builds
 #change CMAKE_BUILD_PARALLEL_LEVEL and MULTITHREADED_BUILD to match the number of your cores/threads
 
 
@@ -7,6 +8,8 @@
 cmake_minimum_required (VERSION 3.18.2)
 project (Survivio)
 
+#set (CMAKE_C_COMPILER clang) #or gcc
+#set (CMAKE_CXX_COMPILER clang++) #or g++
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
