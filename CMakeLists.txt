@@ -17,6 +17,7 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
 set (CMAKE_BUILD_PARALLEL_LEVEL 8)
 set (MULTITHREADED_BUILD 8)
+set (EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
 if (NOT CMAKE_BUILD_TYPE)
   set (CMAKE_BUILD_TYPE "Release")
@@ -55,4 +56,3 @@ add_executable (Survivio ${SRC_FILES})
 set_target_properties (Survivio PROPERTIES LINK_FLAGS "-Wl,-rpath,./lib")
 target_link_libraries (Survivio ${LIB_FILES}) #sfml-graphics sfml-window sfml-audio sfml-network sfml-system
 #install (TARGETS Survivio DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
-add_custom_command (TARGET Survivio POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/Survivio ${CMAKE_CURRENT_BINARY_DIR}/bin/Survivio)
