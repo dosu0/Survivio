@@ -10,6 +10,7 @@ project (Survivio)
 
 #set (CMAKE_C_COMPILER clang) #or gcc
 #set (CMAKE_CXX_COMPILER clang++) #or g++
+#set (CMAKE_MAKE_PROGRAM ninja) #or make
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
