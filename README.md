@@ -14,7 +14,7 @@ The project is currently in the stage of early alpha development, so any contrib
 
         git clone https://github.com/Fenex330/Survivio.git
 
-3) In the terminal write:
+3) In the terminal write (or use cmake gui to configure and generate native build files):
 
         mkdir Survivio/build/
         cd Survivio/build/
