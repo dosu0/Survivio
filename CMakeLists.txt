@@ -30,7 +30,7 @@ endif()
 
 if (WIN32)
     set (SFML_INCLUDE_DIR "dependencies/SFML/windows/include")
-    set (SFML_LIBRARY_DIR "dependencies/SFML/windows/bin")
+    set (SFML_LIBRARY_DIR "dependencies/SFML/windows/lib")
 endif()
 
 if (APPLE)

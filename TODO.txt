@@ -1,7 +1,6 @@
 Add Multiplayer support
 test on windows and mac
 if compiling cross-platform successfully - tag master branch
-rename windows "bin" to "lib"
 package binaries with cpack
 try static linking (from custom sfml build)
 try: codeblocks, codelite, mingw, VS, ninja, makefiles, xcode, clion
