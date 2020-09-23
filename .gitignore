@@ -1,4 +1,7 @@
-# Executables
 *.ignore
 *.vscode
+*.DS_Store
+.DS_Store
+.DS_Store/
 build
+build/
