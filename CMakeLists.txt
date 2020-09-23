@@ -52,10 +52,21 @@ file (COPY "${SFML_LIBRARY_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
 include_directories ("include")
 include_directories (SYSTEM ${SFML_INCLUDE_DIR})
-link_directories ("${CMAKE_CURRENT_BINARY_DIR}/bin/lib/")
 file (GLOB SRC_FILES "src/*.cpp")
+
+if (WIN32)
+    file (GLOB LIB_FILES "${CMAKE_CURRENT_BINARY_DIR}/bin/lib/*")
+else()
+    link_directories ("${CMAKE_CURRENT_BINARY_DIR}/bin/lib/")
+endif()
 
 add_executable (Survivio ${SRC_FILES})
 set_target_properties (Survivio PROPERTIES LINK_FLAGS "-Wl,-rpath,./lib")
-target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
+
+if (WIN32)
+    target_link_libraries (Survivio ${LIB_FILES})
+else()
+    target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
+endif()
+
 #install (TARGETS Survivio DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
