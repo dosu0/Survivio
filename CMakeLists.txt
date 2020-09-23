@@ -54,7 +54,6 @@ include_directories ("include")
 include_directories (SYSTEM ${SFML_INCLUDE_DIR})
 link_directories ("${CMAKE_CURRENT_BINARY_DIR}/bin/lib/")
 file (GLOB SRC_FILES "src/*.cpp")
-#file (GLOB LIB_FILES "${CMAKE_CURRENT_BINARY_DIR}/bin/lib/*")
 
 add_executable (Survivio ${SRC_FILES})
 set_target_properties (Survivio PROPERTIES LINK_FLAGS "-Wl,-rpath,./lib")
