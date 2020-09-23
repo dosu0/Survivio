@@ -9,6 +9,7 @@ The project is currently in the stage of early alpha development, so any contrib
 ### Building
 
 1) Satisfy the SFML dependencies, if needed (https://www.sfml-dev.org/faq.php)
+   and intall the newest version of cmake (https://cmake.org/download/)
 
 2) clone this repository anywhere:
 
