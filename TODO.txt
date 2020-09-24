@@ -1,5 +1,4 @@
 package binaries with cpack
 try static linking (from custom sfml build)
-try: codeblocks, codelite, VS, xcode, clion
 rebrand project if legal issues appear
 remove console window on Windows

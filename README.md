@@ -49,7 +49,7 @@ Tested to be working on:
 
 Compilers - g++, clang++
 
-build tools - make, ninja
+build tools - make, ninja, CodeBlocks project files, CodeLite project files
 
 
 
