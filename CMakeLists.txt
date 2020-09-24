@@ -62,7 +62,7 @@ else()
 endif()
 
 if (WIN32)
-    add_executable (Survivio WIN32 ${SRC_FILES})
+    add_executable (Survivio WIN32 ${SRC_FILES}) #remove WIN32 if you want to keep console logs
     target_link_libraries (Survivio ${LIB_FILES})
 else()
     add_executable (Survivio ${SRC_FILES})
