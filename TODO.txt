@@ -1,6 +1,4 @@
 Add Multiplayer support
-test on windows and mac
-if compiling cross-platform successfully - tag master branch
 package binaries with cpack
 try static linking (from custom sfml build)
-try: codeblocks, codelite, mingw, VS, ninja, makefiles, xcode, clion
+try: codeblocks, codelite, VS, xcode, clion

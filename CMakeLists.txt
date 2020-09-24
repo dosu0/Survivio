@@ -45,8 +45,9 @@ if (UNIX AND NOT APPLE) #LINUX
 endif()
 
 file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin")
-file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
-file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
+file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
+file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "res" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 file (COPY "${SFML_LIBRARY_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
 
@@ -68,5 +69,3 @@ if (WIN32)
 else()
     target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
 endif()
-
-#install (TARGETS Survivio DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
