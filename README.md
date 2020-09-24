@@ -18,6 +18,7 @@ The project is currently in the stage of an early alpha development, so any cont
 
 
 2) Install the newest version of [Cmake](https://cmake.org/download/)
+   and any corresponding build tool + compiler (see list of supported below)
 
 
 3) In the terminal write (to clone the repository on your computer):
