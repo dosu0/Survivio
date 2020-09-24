@@ -29,6 +29,12 @@ The project is currently in the stage of an early alpha development, so any cont
 The folder "Survivio/build/bin" will contain all the binary files
 
 
+Tested to be working on:
+
+Compilers - g++, clang++
+build tools - make, ninja
+
+
 
 ### Mirror List
 
