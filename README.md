@@ -39,6 +39,7 @@ The project is currently in the stage of an early alpha development, so any cont
 The folder "Survivio/build/bin" will contain all the binary files
 
 Note that on windows, you must manualy copy the dlls from "lib" folder to the binary root folder (bin) next to the executable
+and also add libgcc_s_dw2-1.dll libstdc++-6.dll libwinpthread-1.dll if building with minGW compiler
 
 
 
