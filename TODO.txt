@@ -1,4 +1,3 @@
 package binaries with cpack
 try static linking (from custom sfml build)
 rebrand project if legal issues appear
-remove console window on Windows
