@@ -4,8 +4,12 @@
 
 Player::Player()
 {
-    if !texture.loadFromFile("res/Creator-Kit/custom/character.png"):
-        std::cerr << "Exiting, resourses not found";
+    if (!texture.loadFromFile("res/Creator-Kit/custom/character.png"))
+    {
+        std::cerr << "Exiting, resourses not found" << std::endl;
+        abort();
+    }
+    
     texture.setSmooth(true);
     texture.setRepeated(false);
     sprite.setTexture(texture);
