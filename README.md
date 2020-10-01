@@ -2,11 +2,9 @@
 
 
 
-Survivio is a desktop clone of the popular browser battle royale shooter - surviv.io, written in C++
-
+Survivio is a desktop clone of the popular browser battle royale shooter - surviv.io, written in C++.
 The project is currently in the stage of an early alpha development, so any contribution is welcome.
-
-At the moment, only Linux and Windows platforms are fully supported, MacOS cupport will arrive soon
+At the moment, only Linux and Windows platforms are fully supported, MacOS cupport will arrive soon.
 
 
 
@@ -28,7 +26,7 @@ At the moment, only Linux and Windows platforms are fully supported, MacOS cuppo
         git clone https://github.com/Fenex330/Survivio.git
 
 
-4) Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer)
+4) Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer):
         
         mkdir Survivio/build/
 
@@ -39,10 +37,10 @@ At the moment, only Linux and Windows platforms are fully supported, MacOS cuppo
         cmake .. && cmake --build .
 
 
-The folder "Survivio/build/bin" will contain all the binary files
+The folder "Survivio/build/bin" will contain all the binary files.
 
 Note that on windows, you must manualy copy the dlls from "lib" folder to the binary root folder (bin) next to the executable
-and also add libgcc_s_dw2-1.dll libstdc++-6.dll libwinpthread-1.dll if building with minGW compiler
+and also add libgcc_s_dw2-1.dll libstdc++-6.dll libwinpthread-1.dll if building with minGW compiler.
 
 
 
