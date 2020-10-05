@@ -61,11 +61,11 @@ else()
     link_directories ("${CMAKE_CURRENT_BINARY_DIR}/bin/lib/")
 endif()
 
+add_executable (Survivio WIN32 ${SRC_FILES}) #remove WIN32 if you want to keep console logs on Windows
+
 if (WIN32)
-    add_executable (Survivio WIN32 ${SRC_FILES}) #remove WIN32 if you want to keep console logs
     target_link_libraries (Survivio ${LIB_FILES})
 else()
-    add_executable (Survivio ${SRC_FILES})
     set_target_properties (Survivio PROPERTIES LINK_FLAGS "-Wl,-rpath,./lib")
     target_link_libraries (Survivio sfml-graphics sfml-window sfml-audio sfml-network sfml-system)
 endif()
