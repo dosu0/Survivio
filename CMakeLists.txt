@@ -5,7 +5,7 @@
 
 
 
-cmake_minimum_required (VERSION 3.18.2)
+cmake_minimum_required (VERSION 3.17.0) #use the latest version here (specified v3.17 for CI compatibility reasons)
 
 if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
     message(FATAL_ERROR "FATAL: In-source builds are not allowed. You should create a separate directory for build files.")
