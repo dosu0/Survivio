@@ -3,3 +3,4 @@ try static linking (from custom sfml build)
 rebrand project if legal issues appear
 add github status badges, releases, .gitattributes
 bundle macos app into dmg with frameworks
+add installation guide to readme
