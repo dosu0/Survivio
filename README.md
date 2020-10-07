@@ -4,7 +4,7 @@
 
 **Survivio** is a desktop clone of the popular browser battle royale shooter - surviv.io, written in C++.
 The project is currently in the stage of an early alpha development, so any contribution is welcome.
-At the moment, only Linux and Windows platforms are fully supported, MacOS cupport will arrive soon.<br><br><br><br>
+At the moment, only Linux and Windows platforms are fully supported, MacOS support will arrive soon.<br><br><br><br>
 
 
 
