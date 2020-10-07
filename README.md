@@ -18,20 +18,20 @@ At the moment, only Linux and Windows platforms are fully supported, MacOS suppo
 
 
 3) In the terminal write (to clone the repository on your computer):
-
+```
         git clone https://github.com/Fenex330/Survivio.git
-
+```
 
 4) Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer):
-        
+```
         mkdir Survivio/build/
-
+```
 
 5) Then write (or use cmake gui to configure and generate native build files):
-
+```
         cd Survivio/build/
         cmake .. && cmake --build .
-
+```
 
 The folder "Survivio/build/bin" will contain all the binary files.
 
