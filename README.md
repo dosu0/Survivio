@@ -1,4 +1,15 @@
-# About<br>
+# Table of contents
+
+* [About](#About)
+* [Building](#Building)
+* [Mirror List](#Mirror-List)
+* [License](#License) <br><br><br><br>
+
+
+
+
+
+### About<br>
 
 **Survivio** is a desktop clone of the popular browser battle royale shooter - surviv.io, written in C++.
 The project is currently in the stage of an early alpha development, so any contribution is welcome.
@@ -17,17 +28,17 @@ At the moment, only Linux and Windows platforms are fully supported, MacOS suppo
    and any corresponding build tool + compiler (see list of supported below)
 
 
-3. In the terminal write (to clone the repository on your computer):<br>
+3. In the terminal write (to clone the repository on your computer): <br>
 ```
         git clone https://github.com/Fenex330/Survivio.git
 ```
 
-4. Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer):<br>
+4. Make a directory called "build" within the Survivio directory (either through the terminal or your file explorer): <br>
 ```
         mkdir Survivio/build/
 ```
 
-5. Then write (or use cmake gui to configure and generate native build files):<br>
+5. Then write (or use cmake gui to configure and generate native build files): <br>
 ```
         cd Survivio/build/
         cmake .. && cmake --build .
@@ -42,8 +53,8 @@ and also add ***libgcc_s_dw2-1.dll libstdc++-6.dll libwinpthread-1.dll*** if bui
 
 Tested to be working on:
 
-Compilers - *g++, clang++* <br>
-build tools - *make, ninja, CodeBlocks project files, CodeLite project files* <br><br><br><br>
+* Compilers - *g++, clang++* <br>
+* build tools - *make, ninja, CodeBlocks project files, CodeLite project files* <br><br><br><br>
 
 
 
