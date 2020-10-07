@@ -61,4 +61,4 @@ Secondary https://notabug.org/Fenex33/Survivio <br><br><br><br>
 
 ### License
 
-Distributed under MIT License
+Distributed under [MIT License](/LICENSE.txt)
