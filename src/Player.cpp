@@ -4,7 +4,7 @@
 
 Player::Player()
 {
-    if (!texture.loadFromFile("res/Creator-Kit/custom/character.png"))
+    if (!texture.loadFromFile("graphics/custom/character.png"))
     {
         std::cerr << "Exiting, resourses not found" << std::endl;
         abort();
