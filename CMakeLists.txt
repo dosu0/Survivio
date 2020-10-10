@@ -49,7 +49,12 @@ file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "res/graphics" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
-file (COPY "${SFML_LIBRARY_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+if (APPLE) # Mac OS needs the Frameworks and the libs
+    file (COPY "dependencies/SFML/macOS/lib " DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+    file (COPY "dependencies/SFML/macOS/Frameworks " DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+else()
+    file (COPY "${SFML_LIBRARY_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+endif()
 
 include_directories ("include")
 include_directories (SYSTEM ${SFML_INCLUDE_DIR})
