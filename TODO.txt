@@ -3,5 +3,7 @@ try static linking (from custom sfml build)
 rebrand project if legal issues appear
 add github status badges, releases, .gitattributes
 bundle macos app into dmg with frameworks
+distribute macos app with developer ID signature
+fix macos not linking with rpath + images not loading (for absolute paths build inside "Applications" folder)
 add installation guide to readme
 add Visual Studio Support

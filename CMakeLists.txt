@@ -49,6 +49,7 @@ file (MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "LICENSE.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "CHANGELOG.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin/docs")
 file (COPY "res/graphics" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
+
 if (APPLE) # Mac OS needs the Frameworks and the libs
     file (COPY "dependencies/SFML/macOS/lib" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
     file (COPY "dependencies/SFML/macOS/Frameworks" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/bin")
