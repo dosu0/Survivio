@@ -1,12 +1,16 @@
 #include <SFML/Graphics.hpp>
+#include "Global.hpp"
 #include "Player.hpp"
+#include "Map.hpp"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 800), "Main Menu");
+    sf::RenderWindow window(sf::VideoMode(surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
     window.setVerticalSyncEnabled(true);
     window.setKeyRepeatEnabled(false);
+
     Player player;
+    Map map;
 
     while (window.isOpen())  //Main Game Loop
     {
