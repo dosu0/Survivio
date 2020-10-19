@@ -5,17 +5,17 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
-    window.setVerticalSyncEnabled(true);
-    window.setKeyRepeatEnabled(false);
-
+    sf::RenderWindow window (sf::VideoMode(surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
     Player player;
     Map map;
+
+    window.setVerticalSyncEnabled (true);
+    window.setKeyRepeatEnabled (false);
 
     while (window.isOpen())  //Main Game Loop
     {
         sf::Event event;
-        while (window.pollEvent(event))
+        while (window.pollEvent (event))
         {
             switch (event.type)
             {
@@ -34,7 +34,9 @@ int main()
         window.clear();
 
         //draw stuff from here
-        window.draw(player.sprite);
+        window.setView (map.mainView);
+        window.draw (map.sprite);
+        window.draw (player.sprite);
         
         window.display();
     }

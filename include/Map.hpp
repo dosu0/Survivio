@@ -3,8 +3,11 @@
 class Map
 {
     public:
+        sf::View mainView;
+        sf::Sprite sprite;
+        
         Map();
 
     private:
-        sf::View mainView;
+        sf::Texture texture;
 };
