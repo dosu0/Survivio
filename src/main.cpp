@@ -24,10 +24,22 @@ int main()
                     break;
 
                 case sf::Event::KeyPressed:
-                    if (event.key.code == sf::Keyboard::Right || event.key.code == sf::Keyboard::D) player.move (1, 0);
-                    else if (event.key.code == sf::Keyboard::Left || event.key.code == sf::Keyboard::A) player.move (-1, 0);
-                    else if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::W) player.move (0, 1);
-                    else if (event.key.code == sf::Keyboard::Down || event.key.code == sf::Keyboard::S) player.move (0, -1);
+                    if (event.key.code == sf::Keyboard::Right || event.key.code == sf::Keyboard::D)
+                    {
+                        player.move (1, 0);
+                    }
+                    else if (event.key.code == sf::Keyboard::Left || event.key.code == sf::Keyboard::A)
+                    {
+                        player.move (-1, 0);
+                    }
+                    else if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::W)
+                    {
+                        player.move (0, 1);
+                    }
+                    else if (event.key.code == sf::Keyboard::Down || event.key.code == sf::Keyboard::S)
+                    {
+                        player.move (0, -1);
+                    }
                     break;
 
                 default:
