@@ -6,7 +6,7 @@
 int main()
 {
     bool key_pressed = false;
-    sf::RenderWindow window (sf::VideoMode(surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
+    sf::RenderWindow window (sf::VideoMode (surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
     Player player;
     Map map;
 
@@ -41,19 +41,19 @@ int main()
 
         if (key_pressed)
         {
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+            if (sf::Keyboard::isKeyPressed (sf::Keyboard::Right) || sf::Keyboard::isKeyPressed (sf::Keyboard::D))
             {
                 player.move (1, 0);
             }
-            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+            else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Left) || sf::Keyboard::isKeyPressed (sf::Keyboard::A))
             {
                 player.move (-1, 0);
             }
-            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+            else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Up) || sf::Keyboard::isKeyPressed (sf::Keyboard::W))
             {
                 player.move (0, 1);
             }
-            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+            else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Down) || sf::Keyboard::isKeyPressed (sf::Keyboard::S))
             {
                 player.move (0, -1);
             }
