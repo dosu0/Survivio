@@ -5,6 +5,7 @@
 
 int main()
 {
+    bool key_pressed = false;
     sf::RenderWindow window (sf::VideoMode(surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
     Player player;
     Map map;
@@ -24,22 +25,11 @@ int main()
                     break;
 
                 case sf::Event::KeyPressed:
-                    if (event.key.code == sf::Keyboard::Right || event.key.code == sf::Keyboard::D)
-                    {
-                        player.move (1, 0);
-                    }
-                    else if (event.key.code == sf::Keyboard::Left || event.key.code == sf::Keyboard::A)
-                    {
-                        player.move (-1, 0);
-                    }
-                    else if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::W)
-                    {
-                        player.move (0, 1);
-                    }
-                    else if (event.key.code == sf::Keyboard::Down || event.key.code == sf::Keyboard::S)
-                    {
-                        player.move (0, -1);
-                    }
+                    key_pressed = true;
+                    break;
+
+                case sf::Event::KeyReleased:
+                    key_pressed = false;
                     break;
 
                 default:
@@ -48,6 +38,26 @@ int main()
         }
 
         window.clear();
+
+        if (key_pressed)
+        {
+            if (event.key.code == sf::Keyboard::Right || event.key.code == sf::Keyboard::D)
+            {
+                player.move (1, 0);
+            }
+            else if (event.key.code == sf::Keyboard::Left || event.key.code == sf::Keyboard::A)
+            {
+                player.move (-1, 0);
+            }
+            else if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::W)
+            {
+                player.move (0, 1);
+            }
+            else if (event.key.code == sf::Keyboard::Down || event.key.code == sf::Keyboard::S)
+            {
+                player.move (0, -1);
+            }
+        }
 
         //draw stuff from here
         window.setView (map.mainView);
