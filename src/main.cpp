@@ -4,12 +4,11 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 800), "Main Menu");
-    
     window.setVerticalSyncEnabled(true);
     window.setKeyRepeatEnabled(false);
     Player player;
 
-    while (window.isOpen())  //game loop
+    while (window.isOpen())  //Main Game Loop
     {
         sf::Event event;
         while (window.pollEvent(event))
@@ -30,7 +29,7 @@ int main()
 
         window.clear();
 
-        //draw stuff here
+        //draw stuff from here
         window.draw(player.sprite);
         
         window.display();
