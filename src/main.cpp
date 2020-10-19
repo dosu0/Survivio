@@ -41,19 +41,19 @@ int main()
 
         if (key_pressed)
         {
-            if (event.key.code == sf::Keyboard::Right || event.key.code == sf::Keyboard::D)
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D))
             {
                 player.move (1, 0);
             }
-            else if (event.key.code == sf::Keyboard::Left || event.key.code == sf::Keyboard::A)
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A))
             {
                 player.move (-1, 0);
             }
-            else if (event.key.code == sf::Keyboard::Up || event.key.code == sf::Keyboard::W)
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || sf::Keyboard::isKeyPressed(sf::Keyboard::W))
             {
                 player.move (0, 1);
             }
-            else if (event.key.code == sf::Keyboard::Down || event.key.code == sf::Keyboard::S)
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S))
             {
                 player.move (0, -1);
             }
