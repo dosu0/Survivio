@@ -39,7 +39,7 @@ if (APPLE)
 endif()
 
 if (UNIX AND NOT APPLE) #LINUX
-    set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -Wextra -Weffc++")
+    set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall -Wextra") #-Weffc++
     set (SFML_INCLUDE_DIR "dependencies/SFML/linux/include")
     set (SFML_LIBRARY_DIR "dependencies/SFML/linux/lib")
 endif()
