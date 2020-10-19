@@ -14,3 +14,9 @@ Player::Player()
     texture.setRepeated (false);
     sprite.setTexture (texture);
 }
+
+Player::Move(x, y)
+{
+    int mul = surviv::default_player_speed;
+    sprite.move(x * mul, y * mul);
+}

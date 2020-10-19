@@ -6,6 +6,7 @@ class Player
         sf::Sprite sprite;
 
         Player();
+        move();
 
     private:
         sf::Texture texture;
