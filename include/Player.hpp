@@ -6,7 +6,7 @@ class Player
         sf::Sprite sprite;
 
         Player();
-        move();
+        void move (int x, int y);
 
     private:
         sf::Texture texture;

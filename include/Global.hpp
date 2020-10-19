@@ -6,5 +6,5 @@ namespace surviv
 {
     const unsigned short view_dim_X = 800;
     const unsigned short view_dim_Y = 800;
-    const unsigned float default_player_speed = 10.0;
+    const unsigned int default_player_speed = 10;
 }

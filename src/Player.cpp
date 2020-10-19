@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Global.hpp"
 #include "Player.hpp"
 
 Player::Player()
@@ -15,8 +16,8 @@ Player::Player()
     sprite.setTexture (texture);
 }
 
-Player::Move(x, y)
+void Player::move (int x, int y)
 {
     int mul = surviv::default_player_speed;
-    sprite.move(x * mul, y * mul);
+    sprite.move (x * mul, y * mul);
 }
