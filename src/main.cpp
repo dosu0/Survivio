@@ -41,25 +41,8 @@ int main()
 
 
 
-        if (key_pressed)
-        {
-            if (sf::Keyboard::isKeyPressed (sf::Keyboard::Right) || sf::Keyboard::isKeyPressed (sf::Keyboard::D))
-            {
-                player.move (map, 1, 0);
-            }
-            else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Left) || sf::Keyboard::isKeyPressed (sf::Keyboard::A))
-            {
-                player.move (map, -1, 0);
-            }
-            else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Up) || sf::Keyboard::isKeyPressed (sf::Keyboard::W))
-            {
-                player.move (map, 0, -1);
-            }
-            else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Down) || sf::Keyboard::isKeyPressed (sf::Keyboard::S))
-            {
-                player.move (map, 0, 1);
-            }
-        }
+        //game logic
+        player.move(map, key_pressed);
 
 
 

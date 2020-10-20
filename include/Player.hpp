@@ -8,7 +8,7 @@ class Player
         sf::Sprite sprite;
 
         Player();
-        void move (Map &map, int x, int y);
+        void move (Map &map, bool key_pressed);
 
     private:
         sf::Texture texture;
