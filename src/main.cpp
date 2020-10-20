@@ -51,11 +51,11 @@ int main()
             }
             else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Up) || sf::Keyboard::isKeyPressed (sf::Keyboard::W))
             {
-                player.move (0, 1);
+                player.move (0, -1);
             }
             else if (sf::Keyboard::isKeyPressed (sf::Keyboard::Down) || sf::Keyboard::isKeyPressed (sf::Keyboard::S))
             {
-                player.move (0, -1);
+                player.move (0, 1);
             }
         }
 
