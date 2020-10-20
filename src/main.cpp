@@ -13,6 +13,8 @@ int main()
     window.setVerticalSyncEnabled (true);
     window.setKeyRepeatEnabled (false);
 
+
+
     while (window.isOpen())  //Main Game Loop
     {
         sf::Event event;
@@ -37,7 +39,7 @@ int main()
             }
         }
 
-        window.clear();
+
 
         if (key_pressed)
         {
@@ -59,6 +61,10 @@ int main()
             }
         }
 
+
+
+        window.clear();
+
         //draw stuff from here
         window.setView (map.mainView);
         window.draw (map.sprite);
@@ -66,6 +72,8 @@ int main()
         
         window.display();
     }
+
+
 
     return EXIT_SUCCESS;
 }
