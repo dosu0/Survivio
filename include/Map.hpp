@@ -10,4 +10,6 @@ class Map
 
     private:
         sf::Texture texture;
+
+        void defaultInit();
 };
