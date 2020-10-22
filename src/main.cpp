@@ -5,7 +5,6 @@
 
 int main()
 {
-    bool key_pressed = false;
     sf::RenderWindow window (sf::VideoMode (surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
     Player player;
     Map map;
@@ -26,14 +25,6 @@ int main()
                     window.close();
                     break;
 
-                case sf::Event::KeyPressed:
-                    key_pressed = true;
-                    break;
-
-                case sf::Event::KeyReleased:
-                    key_pressed = false;
-                    break;
-
                 default:
                     break;
             }
@@ -42,7 +33,7 @@ int main()
 
 
         //game logic
-        player.move(map, key_pressed);
+        player.move(map);
 
 
 
