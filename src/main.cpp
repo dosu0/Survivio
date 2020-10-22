@@ -18,7 +18,7 @@ int main()
     while (window.isOpen())  //Main Game Loop
     {
         sf::Event event;
-        while (window.pollEvent (event))
+        while (window.pollEvent (event)) //event handler loop
         {
             switch (event.type)
             {
@@ -46,14 +46,12 @@ int main()
 
 
 
-        window.clear();
-
-        //draw stuff from here
+        //drawing happens from here
         window.setView (map.mainView);
         window.draw (map.sprite);
         window.draw (player.sprite);
-        
         window.display();
+        window.clear();
     }
 
 
