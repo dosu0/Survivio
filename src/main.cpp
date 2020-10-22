@@ -13,7 +13,10 @@ int main()
     window.setVerticalSyncEnabled (true);
     window.setKeyRepeatEnabled (false);
 
-
+    // Set Window Icon
+    sf::Image icon;
+    icon.loadFromFile("graphics/logo/logo-surviv.png");
+    window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 
     while (window.isOpen())  //Main Game Loop
     {
