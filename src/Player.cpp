@@ -3,9 +3,16 @@
 #include "Global.hpp"
 #include "Player.hpp"
 
+unsigned int Player::player_count = 0;
+
 Player::Player()
 {
     defaultInit();
+}
+
+Player::~Player()
+{
+    Player::player_count--;
 }
 
 void Player::move (Map &map)
@@ -45,4 +52,6 @@ void Player::defaultInit()
     texture.setSmooth (true);
     texture.setRepeated (false);
     sprite.setTexture (texture);
+
+    Player::player_count++;
 }
