@@ -5,7 +5,6 @@
 
 int main()
 {
-    bool key_pressed = false;
     sf::RenderWindow window (sf::VideoMode (surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
     Player player;
     Map map;
@@ -21,20 +20,12 @@ int main()
     while (window.isOpen())  //Main Game Loop
     {
         sf::Event event;
-        while (window.pollEvent (event))
+        while (window.pollEvent (event)) //event handler loop
         {
             switch (event.type)
             {
                 case sf::Event::Closed:
                     window.close();
-                    break;
-
-                case sf::Event::KeyPressed:
-                    key_pressed = true;
-                    break;
-
-                case sf::Event::KeyReleased:
-                    key_pressed = false;
                     break;
 
                 default:
@@ -45,18 +36,16 @@ int main()
 
 
         //game logic
-        player.move(map, key_pressed);
+        player.move(map);
 
 
 
-        window.clear();
-
-        //draw stuff from here
+        //drawing happens from here
         window.setView (map.mainView);
         window.draw (map.sprite);
         window.draw (player.sprite);
-        
         window.display();
+        window.clear();
     }
 
 
