@@ -1,5 +1,4 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
 #include "Global.hpp"
 #include "SuperPlayer.hpp"
 
@@ -37,19 +36,4 @@ void SuperPlayer::move (Map &map)
         sprite.move (0 * mul, 1 * mul);
         map.mainView.move (0 * mul, 1 * mul);
     }
-}
-
-void SuperPlayer::defaultInit()
-{
-    if (!texture.loadFromFile ("graphics/custom/character.png"))
-    {
-        std::cerr << "Exiting, resources not found" << std::endl;
-        abort();
-    }
-    
-    texture.setSmooth (true);
-    texture.setRepeated (false);
-    sprite.setTexture (texture);
-
-    Player::player_count++;
 }

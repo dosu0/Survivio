@@ -11,7 +11,4 @@ class SuperPlayer final : public Player
 
     private:
         sf::Texture texture;
-
-    protected:
-        virtual void defaultInit() override;
 };

@@ -13,7 +13,7 @@ class Player // Abstract Base Class for SuperPlayer, NetPlayer, BotPlayer
 
     private:
         sf::Texture texture;
-        
+
     protected:
-        virtual void defaultInit() = 0;
+        void defaultInit();
 };
