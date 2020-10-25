@@ -1,12 +1,13 @@
 #include <SFML/Graphics.hpp>
 #include "Global.hpp"
 #include "Player.hpp"
+#include "SuperPlayer.hpp"
 #include "Map.hpp"
 
 int main()
 {
     sf::RenderWindow window (sf::VideoMode (surviv::view_dim_X, surviv::view_dim_Y), "Main Menu");
-    Player player;
+    SuperPlayer player;
     Map map;
 
     window.setVerticalSyncEnabled (true);

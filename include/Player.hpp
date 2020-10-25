@@ -2,18 +2,18 @@
 
 #include "Map.hpp"
 
-class Player
+class Player // Abstract Base Class for SuperPlayer, NetPlayer, BotPlayer
 {
     public:
         sf::Sprite sprite;
         static unsigned int player_count;
 
-        Player();
-        ~Player();
-        void move (Map &map);
+        virtual ~Player() {};
+        virtual void move (Map &map) = 0;
 
     private:
         sf::Texture texture;
-
-        void defaultInit();
+        
+    protected:
+        virtual void defaultInit() = 0;
 };
