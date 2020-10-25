@@ -8,7 +8,4 @@ class SuperPlayer final : public Player
         SuperPlayer();
         virtual ~SuperPlayer();
         virtual void move (Map &map) override;
-
-    private:
-        sf::Texture texture;
 };
